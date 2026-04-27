@@ -1,0 +1,8 @@
+databaseChangeLog:
+  - changeSet:
+      id: 002-create-doctors-table
+      author: hospital-team
+      changes:
+        - sqlFile:
+            path: 03_tables/001_table_doctors.sql
+            relativeToChangelogFile: true
