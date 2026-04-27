@@ -1,3 +1,5 @@
 INSERT INTO appointments (id, patient_id, doctor_id, appointment_date, status) VALUES
 (uuid_generate_v4(), (SELECT id FROM patients WHERE email = 'carlos.perez@email.com'), (SELECT id FROM doctors WHERE email = 'juan.rodriguez@hospital.com'), '2025-05-01 09:00:00', 'SCHEDULED'),
 (uuid_generate_v4(), (SELECT id FROM patients WHERE email = 'maria.garcia@email.com'), (SELECT id FROM doctors WHERE email = 'ana.martinez@hospital.com'), '2025-05-02 10:00:00', 'SCHEDULED');
+
+
