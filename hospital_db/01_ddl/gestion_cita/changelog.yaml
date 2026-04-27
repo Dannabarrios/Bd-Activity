@@ -1,0 +1,8 @@
+databaseChangeLog:
+  - changeSet:
+      id: 003-create-appointments-table
+      author: hospital-team
+      changes:
+        - sqlFile:
+            path: 03_tables/001_table_appointments.sql
+            relativeToChangelogFile: true
