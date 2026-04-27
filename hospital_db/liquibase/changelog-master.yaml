@@ -1,0 +1,19 @@
+databaseChangeLog:
+  - includeAll:
+      path: ../01_ddl/gestion_usuarios/
+      relativeToChangelogFile: true
+  - includeAll:
+      path: ../01_ddl/gestion_medica/
+      relativeToChangelogFile: true
+  - includeAll:
+      path: ../01_ddl/gestion_cita/
+      relativeToChangelogFile: true
+  - includeAll:
+      path: ../02_dml/00_inserts/gestion_usuarios/
+      relativeToChangelogFile: true
+  - includeAll:
+      path: ../02_dml/00_inserts/gestion_medica/
+      relativeToChangelogFile: true
+  - includeAll:
+      path: ../02_dml/00_inserts/gestion_cita/
+      relativeToChangelogFile: true
