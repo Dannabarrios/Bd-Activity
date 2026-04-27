@@ -1,0 +1,17 @@
+services:
+  hospital-db:
+    image: postgres:15-alpine
+    container_name: hospital_postgres_qa
+    environment:
+      POSTGRES_DB: hospital_db_qa
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+    ports:
+      - "5434:5432"
+    volumes:
+      - hospital_data_qa:/var/lib/postgresql/data
+    restart: unless-stopped
+
+volumes:
+  hospital_data_qa:
+    driver: local
